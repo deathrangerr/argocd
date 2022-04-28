@@ -11,10 +11,8 @@ metadata:
     
 spec:
   ports:
-    - port: 8080
-      protocol: TCP
-      targetPort: 8080
+    - port: 80
+      targetPort: 80
   selector:
-    app: argo
-    version: v3.0.0
+    app: guestbook-ui
   type: LoadBalancer
